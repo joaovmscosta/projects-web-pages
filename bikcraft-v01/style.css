@@ -125,7 +125,7 @@ do hover, adicione somente a cor, isso hevitará o ajuste de tamanho.
     transform: scale(110%);
     transition: .3s;
 }
-}
+
 
 .introducao p {
     font-size: 1.25rem;
