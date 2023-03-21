@@ -1,32 +1,33 @@
-@media(prefers-color-scheme: light){
-    :root{
-        --background-color: #f7f7f7;
-        --emphasis-color: #e21;
-        --emphasis-color-2: #900;
-        --secundary-color: #fff;
-        --font-color: #000;
-    }
-}
 
-@media(prefers-color-scheme: dark){
+:root{
+    
+    --cor-primaria: #e21;
+    --cor-primaria-escura: #900;
+    --fundo-1: #f7f7f7;
+    --fundo-2: #ffffff;
+    --texto: #000000;
+    --cor-subtitulo: rgba(0, 0, 0, 0.2);
+    --dth-onda-background: url("./img/onda-clara.svg");
+}
+@media (prefers-color-scheme: dark){
     :root {
-        --background-color: #111;
-        --emphasis-color: #900;
-        --emphasis-color-2: #e21;
-        --secundary-color: #000;
-        --font-color: #fff;
-        --font-color-2: #999;
+        --fundo-1: #111;
+        --fundo-2: #000;
+        --texto: #ffffff;
+        --cor-subtitulo: rgba(255, 255, 255, 0.2);
+        --dth-onda-background: url("./img/onda-escura.svg");
     }
 }
 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: var(--background-color);
+    background: var(--fundo-1);
     margin: 60px 0 0 0; /*top right bottom left*/
     display: grid;
     gap: 60px;
     justify-items: center;
+    color: var(--texto);
 }
 
 img {
@@ -78,10 +79,10 @@ p {
 
 .menu a {
     display: block;
-    background: var(--secundary-color);
+    background: var(--fundo-2);
     padding: 1rem 2rem;
     border-radius: 4px;
-    color: var(--font-color-2);
+    color: var(--texto-2);
     text-transform: uppercase;
     border: 2px solid transparent;
 }
@@ -98,7 +99,7 @@ Utilize uma borda transparent no elemento em questão e na estrutura
 do hover, adicione somente a cor, isso hevitará o ajuste de tamanho.
 */
 .menu a:hover {
-    border-color: var(--emphasis-color);
+    border-color: var(--cor-primaria);
     transform: scale(120%);
     transition: .5s;
 }
@@ -110,7 +111,7 @@ do hover, adicione somente a cor, isso hevitará o ajuste de tamanho.
 }
 
 .introducao {
-    background: var(--background-color);
+    background: var(--fundo-1);
     padding: 40px;
     text-align: right;
     position: relative;
@@ -118,7 +119,7 @@ do hover, adicione somente a cor, isso hevitará o ajuste de tamanho.
     gap: 20px;
     align-content: center;
     justify-items: end;
-    color: var(--font-color);
+    color: var(--texto);
 }
 
 .introducao-cover img:hover{
@@ -129,7 +130,7 @@ do hover, adicione somente a cor, isso hevitará o ajuste de tamanho.
 
 .introducao p {
     font-size: 1.25rem;
-    color: var(--font-color-2);
+    color: var(--texto-2);
 }
 
 .introducao h1 {
@@ -144,7 +145,7 @@ main {
     content: "";
     width: 60px;
     height: 4px;
-    background: var(--emphasis-color);
+    background: var(--cor-primaria);
     position: absolute;
     top: 30px;
     right: -30px;
@@ -163,7 +164,7 @@ main {
 }
 
 .botao {
-    background: var(--emphasis-color);
+    background: var(--cor-primaria);
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 4px;
@@ -172,7 +173,7 @@ main {
 }
 
 .botao:hover {
-    background: var(--emphasis-color-2);
+    background: var(--cor-primaria-escura);
     transform: scale(105%);
     transition: .8s;
 }
@@ -180,16 +181,16 @@ main {
 .subtitulo {
     font-size: 4rem;
     text-transform: uppercase;
-    color: var(--font-color-2);
+    color: var(--cor-subtitulo);
     text-align: right;
     padding: 40px;
     align-self: center;
-    background-image: url("./img/onda.svg");
+    background-image: var(--dth-onda-background);
     /* word-break: break-all; -> quebra as palavras, no caso, todas */
 }
 
 .vantagens {
-    background: var(--secundary-color);
+    background: var(--fundo-2);
     padding: 40px;
 }
 
@@ -198,12 +199,12 @@ main {
     grid-template-columns: auto 1fr;
     gap: 10px 20px;
     padding: 20px;
-    background: var(--secundary-color);
-    color: var(--font-color);
+    background: var(--fundo-2);
+    color: var(--texto);
 }
 
 .vantagens-item:hover {
-    border-left: 4px solid var(--emphasis-color);
+    border-left: 4px solid var(--cor-primaria);
     transition: .4s;
 }
 
@@ -213,7 +214,7 @@ main {
 }
 
 .vantagens-item:nth-child(odd) {
-    background: var(--background-color);
+    background: var(--fundo-1);
 }
 
 
@@ -223,7 +224,7 @@ main {
 
 .rodape {
     font-size: 1rem;
-    background: var(--secundary-color);
+    background: var(--fundo-2);
     color: var(--font-color-2);
     width: 100%;
     text-align: center;
