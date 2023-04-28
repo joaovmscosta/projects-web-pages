@@ -16,7 +16,7 @@
 <body>
 <header>
     <!-- place navbar here -->
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html"><img src="./assets/img/caravan.svg" alt="Caravan marca"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,8 +24,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="Locais page" href="locais.html">Locais</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle aria-current="Locais page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Locais</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a href="local.html" class="dropdown-item">California</a>
+            <a href="local.html" class="dropdown-item">Paris</a>
+            <a href="local.html" class="dropdown-item">Dublin</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="planos page" href="planos.html">Planos</a>
