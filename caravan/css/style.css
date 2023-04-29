@@ -5,3 +5,18 @@ body{
 .box-shadow{
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05), 0 4px 0 rgba(0,0,0,.05);
 }
+
+@media (max-width: 767px){
+  #home-quote{
+    font-size: 2.5rem;
+  }
+
+  /*Nesse @media torna o fixed-top realtive, para que no mobile o layout suba ao invés de ficar fixo.*/
+  body{
+    padding: 0; /*Temo que zerar o padding, pois foi utilizado um tamanho de padding anteriormente para mante fixo ao topo*/
+  }
+  .fixed-top{
+    position: relative;
+  }
+  
+}
