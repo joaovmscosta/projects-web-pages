@@ -6,6 +6,10 @@ body{
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.05), 0 4px 0 rgba(0,0,0,.05);
 }
 
+.height{
+  height: 300px;
+}
+
 @media (max-width: 767px){
   #home-quote{
     font-size: 2.5rem;
@@ -18,5 +22,10 @@ body{
   .fixed-top{
     position: relative;
   }
-  
+}
+
+@media (min-width: 1440px) {
+  .col-xxl {
+    flex: 2 0 0%;
+  }
 }
