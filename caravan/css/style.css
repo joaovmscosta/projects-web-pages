@@ -1,35 +1,25 @@
-body{
-  padding-top: 77px;
+body {
+  padding-top: 75px;
 }
 
-.box-shadow{
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05), 0 4px 0 rgba(0,0,0,.05);
+.box-shadow {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.05),
+              0 4px 8px 0 rgba(0,0,0,.05);
 }
 
-.height{
-  height: 300px;
+#home-quote {
+  background: url('../assets/img/bg-quote.jpg') center center;
+  background-size: cover;
 }
 
-.pergunta a{
-  text-decoration: none;
-}
-
-@media (max-width: 767px){
-  #home-quote{
+@media (max-width: 767px) {
+  #home-quote .display-4{
     font-size: 2.5rem;
   }
-
-  /*Nesse @media torna o fixed-top realtive, para que no mobile o layout suba ao invés de ficar fixo.*/
-  body{
-    padding: 0; /*Temo que zerar o padding, pois foi utilizado um tamanho de padding anteriormente para mante fixo ao topo*/
+  body {
+    padding-top: 0px;
   }
-  .fixed-top{
+  .fixed-top {
     position: relative;
-  }
-}
-
-@media (min-width: 1440px) {
-  .col-xxl {
-    flex: 2 0 0%;
   }
 }
