@@ -92,7 +92,7 @@
 
       <!--AREA DE FORMULÁRIO DADOS-->
       <div class="row">
-        <form action="" class="col-lg-6">
+        <form action="" class="col-lg-6 col-12">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputNome">Nome</label>
@@ -134,9 +134,125 @@
             </div>
           </div>
 
+          <!-- AREA FORMULÁRIO PAGAMENTOS-->
+          <div class="bg-light rounded box-shadow p-3 form-group">
+            <h2 class="h6 text-primary text-uppercase">forma de pagamento</h2>
+            <nav class="nav btn-group mb-3 col-xl-8 col-md-12" id="formaPagamento" role="tablist">
+              <!-- PAGAMENTO CARTÃO DE CRÉDITO-->
+              <button type="button" class="btn btn-secondary btn-sm active" id="nav-cartao-tab" data-toggle="tab"
+                href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">
+                Cartão de Crédito
+              </button>
 
+              <!--PAGAMENTO BOLETO-->
+              <button type="button" class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-toggle="tab"
+                href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">
+                Boleto Bancário
+              </button>
+            </nav>
+
+            <!--PREENCHIMENTO DOS DADOS DE PAGAMENTO-->
+            <div class="tab-content" id="formaPagamentoConteudo">
+              <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputNomeCartao">Nome no cartão</label>
+                    <input type="text" class="form-control" id="inputNomeCartao" placeholder="Nome impresso no cartão">
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputMes" class="text-capitalize">mês</label>
+                    <select id="inputMes" class="form-control">
+                      <option>mm</option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-3 col-6">
+                    <label for="inputAno" class="text-capitalize">ano</label>
+                    <select id="inputAno" class="form-control">
+                      <option>aaaa</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                      <option>2026</option>
+                      <option>2027</option>
+                      <option>2028</option>
+                      <option>2029</option>
+                      <option>2030</option>
+                      <option>2031</option>
+                      <option>2032</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-6 col-6">
+                    <label for="inputNumeroCartao">Número do cartão</label>
+                    <input type="text" class="form-control" id="inputNumeroCartao" placeholder="1234 5678 8765 4321">
+                  </div>
+                  <div class="form-group col-md-6 col-6">
+                    <label for="inputCodigo">Código de Segurança</label>
+                    <input type="text" class="form-control" id="inputCodigo" placeholder="xxx">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+                <p class="lead">Clique em contratar plano que enviaremos um boleto para o seu e-mail</p>
+              </div>
+            </div>
+          </div>
+
+          <!--AREA DOS TERMOS-->
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                <p class="h6">Concordo com os <a href="#" class="text-primary">Termos e Condições</a></p>
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">Contratar Plano</button>
         </form>
+        <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+
+          <div class="col-md mb-5">
+            <h2 class="h6 text-primary text-uppercase">plano escolhido</h2>
+            <div class="bg-light rounded p-4 box-shadow">
+              <!-- Aplica o estilo de fundo em colunas-->
+              <h2>Gold</h2>
+              <ul class=" lista-plano list-unstyled">
+                <li> → 30 dias de viagem</li>
+                <li> → 3destinos diferentes</li>
+                <li> → Tudo pago pela empresa</li>
+                <li> → Ingressos para festas</li>
+              </ul>
+              <form action="">
+                <div class="form-group">
+                  <select class="form-control bg-light" id="inputCidades">
+                    <option>Selecione a Cidade</option>
+                    <option>California</option>
+                    <option>Paris</option>
+                    <option>Dublin</option>
+                  </select>
+                </div>
+              </form>
+              <div class="col-lg my-2">
+                <span class="h4">R$5.000</span>
+              </div>
+            </div>
+            <a href=""></a>
+          </div>
+        </div>
+      </div>
+      </div>
     </section>
+
   </main>
 
   <footer class="bg-dark text-white mt-5">
