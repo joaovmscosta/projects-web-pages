@@ -7,6 +7,15 @@ body {
               0 4px 8px 0 rgba(0,0,0,.05);
 }
 
+.lista-plano li{
+  padding: 1rem;
+}
+/*Aplica somente no elemento que é a classe .lista-plano seguido de um li que é seguido de outro li*/
+.lista-plano li + li{
+  border-top: 1px solid rgba(0,0,0,.2);
+  padding: 1rem;
+}
+
 #home-quote {
   background: url('../assets/img/bg-quote.jpg') center center;
   background-size: cover;
